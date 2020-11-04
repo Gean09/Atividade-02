@@ -1,0 +1,151 @@
+body{
+    font-family: 'Opens Sans', Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(22, 19, 19);
+
+}
+
+header{
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    box-shadow: 0px 3px 3px 1px grey;
+}
+
+header div{
+    width: 300px;
+    margin-left: 20px;
+}
+
+header nav{
+    overflow: hidden;
+    margin-top: 25px;
+    width: calc(100% - 170px);
+}
+
+header nav ul{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(167, 213, 216);
+}
+
+#perfil, main:nth-of-type(1){
+    margin-top: 60px;
+}
+
+#perfil{
+    text-align: center;
+}
+
+#perfil div:nth-of-type(1) {
+    height: 200px;
+    background-image: url('../img/Inicio/3estrelas.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px 10px 0px 0px;
+}
+#contato h2{
+    margin-left: 40px;
+}
+
+#contato nav ul{
+    list-style-type: none;  
+}
+#pagina{
+    margin-top: 60px;
+    text-align: center;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px 10px 0px 0px;
+}
+
+h1, h2{
+    color: rgba(22, 7, 87, 0.918);
+    
+}
+
+
+.imagen{
+    height: 250px;
+    position: relative;
+    top: -50px;
+    border-radius: 80%;
+}
+.produtos {
+    height: 280px;
+   
+}
+
+.secao {
+    background-color: rgb(79, 221, 110);
+    padding: 20px 20px 20px 20px;
+    margin: 10px;
+    width: 80vw;
+    max-width: 650px;
+    box-sizing: border-box;
+    overflow: auto;
+    border-radius: 9px;
+    box-shadow: 1px 3px 3px 1px;
+
+}
+
+
+footer{
+    background-color: #FFF;
+    color: rgb(15, 70, 70);
+    height: 100px;
+    font-family: 'Times New Roman', Times, serif;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+}
+
+@media screen and (max-width: 450px) {
+    header {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    header div {
+      margin-left: 0px;
+    }
+    
+    header nav {
+      width: 100%;
+    }
+    
+    header nav ul {
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+      margin-top: 0;
+    }
+  
+    header nav ul li {
+      padding: 3px;
+    }
+  
+    #perfil, main:nth-of-type(1){
+      margin-top: 115px;
+    }
+    #pagina, main {
+        margin-top: 115px;
+    }
+    .produtos {
+        height: 200px;
+  }
